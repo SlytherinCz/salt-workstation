@@ -1,0 +1,14 @@
+{
+  "default-address-pools": [
+    {
+      "scope": "local",
+      "base": "{{ pillar['docker']['local-base'] }}",
+      "size": 24
+    },
+    {
+      "scope": "global",
+      "base": "{{ pillar['docker']['global-base'] }}",
+      "size": 24
+    }
+  ]
+}
